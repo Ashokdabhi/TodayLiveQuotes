@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/btn_motivational"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_motivational"
+            android:text="Motivational"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_love"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_love"
+            android:text="Love"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_success"
+            android:text="Success"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_friendship"
+            android:text="Friendship"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_life"
+            android:text="Life"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_funny"
+            android:text="Funny"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_relationship"
+            android:text="Relationship"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_positive"
+            android:text="Positive"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_health"
+            android:text="Health"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_family"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_family"
+            android:text="Family"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_attitude"
+            android:text="Attitude"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_miss_you"
+            android:text="Miss You"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_morning"
+            android:text="Morning"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_birthday"
+            android:text="Birthday"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_smile"
+            android:text="Smile"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_thank_you"
+            android:text="Thank You"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            tools:ignore="ButtonStyle" />
+    </TableRow>
+
+</TableLayout>
