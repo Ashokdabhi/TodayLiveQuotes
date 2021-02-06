@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_drawer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <include layout="@layout/nav_header_main" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/explore"
+        app:drawableStartCompat="@drawable/ic_explore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/favorite"
+        app:drawableStartCompat="@drawable/ic_favorite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/night_mode"
+        app:drawableStartCompat="@drawable/ic_night_mode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/recent_notification"
+        app:drawableStartCompat="@drawable/ic_notifications" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/rate_us"
+        app:drawableStartCompat="@drawable/ic_rate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/share_app"
+        app:drawableStartCompat="@drawable/ic_share" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/contact_us"
+        app:drawableStartCompat="@drawable/ic_contacts" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/privacy_policy"
+        app:drawableStartCompat="@drawable/ic_lock" />
+
+</LinearLayout>

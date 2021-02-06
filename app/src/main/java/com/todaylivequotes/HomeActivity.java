@@ -4,8 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -22,17 +22,19 @@ import com.google.android.material.tabs.TabLayout;
 import com.todaylivequotes.fragment.CategoriesFragment;
 import com.todaylivequotes.fragment.QuotesFragment;
 
-import java.util.Objects;
-
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Context mContext;
-    private DrawerLayout drawer;
-    private NavigationView navigationView;
     private Toolbar toolbar;
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mBarDrawerToggle;
+    private ImageButton img_right;
+    private LinearLayout layout_drawer;
+
+    private Context mContext;
+
+    //    private NavigationView navigationView;
     TabLayout tabLayout;
     ViewPager viewPager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,29 +43,32 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         initToolbar();
         initComponent();
 
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this,
-                drawer,
-                toolbar,
-                R.string.openDrawer,
-                R.string.closeDrawer);
-        actionBarDrawerToggle.syncState();
+
     }
 
     private void initToolbar() {
         toolbar = findViewById(R.id.toolbar);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-            Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
-            TextView toolbar_title = toolbar.findViewById(R.id.toolbar_title);
-            toolbar_title.setVisibility(View.GONE);
-        }
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        img_right = findViewById(R.id.img_right);
+        layout_drawer = findViewById(R.id.layout_drawer);
+        img_right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mDrawerLayout.isDrawerOpen(layout_drawer)) {
+                    mDrawerLayout.closeDrawer(layout_drawer);
+                } else {
+                    mDrawerLayout.openDrawer(layout_drawer);
+                }
+            }
+        });
     }
 
     private void initComponent() {
-        drawer = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
+        /*navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
+*/
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.addTab(tabLayout.newTab().setText("QUOTES"));
@@ -95,13 +100,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.explore:
+            /*case R.id.explore:
                 Toast.makeText(mContext, "explore Call", Toast.LENGTH_SHORT).show();
                 drawer.closeDrawers();
-                break;
+                break;*/
         }
         return false;
     }
+
     public class MyAdapter extends FragmentPagerAdapter {
         public MyAdapter(@NonNull FragmentManager fm, int behavior) {
             super(fm, behavior);
